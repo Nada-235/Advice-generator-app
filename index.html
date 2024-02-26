@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Advice generator app</title>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body
+		class="flex flex-col items-center justify-center w-screen h-screen bg-[#1f2632] gap-24"
+	>
+		<div
+			id="adviceContainer"
+			class="flex flex-col items-center justify-center bg-[#323a49] w-9/12 lg:w-4/12 px-7 py-12 rounded-lg relative shadow-lg shadow-[#fffff]"
+		>
+			<p
+				id="adviceID"
+				class="uppercase font-['Manrope'] text-xs text-[#52ffa8] tracking-[.3em]"
+			>
+
+			</p>
+			<p
+				id="adviceDisplay"
+				class="text-xl text-[#cee3e9] text-center py-7"
+			>
+				Loading .. 
+			</p>
+			<img
+				src="./images/pattern-divider-desktop.svg"
+				alt="Desktop Divider"
+				class="hidden md:block"
+			/>
+			<img
+				src="./images/pattern-divider-mobile.svg"
+				alt="Mobile Divider"
+				class="md:hidden"
+			/>
+			<button
+				id="btn"
+				class="flex items-center justify-center w-16 h-16 bg-[#52ffa8] rounded-full hover:shadow-lg hover:shadow-[#52ffa8] absolute bottom-[-30px]"
+			>
+				<img
+					src="./images/icon-dice.svg"
+					alt="Icon-dice"
+					class="w-7 h-7"
+				/>
+			</button>
+		</div>
+
+		<footer
+			class="flex flex-col gap-1 justify-center items-center text-xs p-2 text-[#cee3e9]"
+		>
+			<div>
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					class="font-bold text-[#52ffa8]"
+					>Frontend Mentor</a
+				>
+			</div>
+
+			<div>
+				Coded by
+				<a
+					href="https://github.com/Nada-235"
+					target="_blank"
+					class="font-bold text-[#52ffa8]"
+					>Nada Al-Shakiry</a
+				>
+			</div>
+		</footer>
+		<script src="./script.js"></script>
+	</body>
+</html>
